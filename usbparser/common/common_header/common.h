@@ -64,7 +64,7 @@ typedef enum _HJ_STRUCT_TYPE
 #define HJ_STRUCT_TYPE__SPLIT_ARRAY_END (U32)(0x00000100)
 #define HJ_STRUCT_TYPE__SPLIT_COMMON (U32)(0x00000200)
 
-#define HJ_STRUCT_ARRAY_DEPTH	(U32)(4) // 최대 4차원 배열까지만 지원한다
+#define HJ_STRUCT_ARRAY_DEPTH	(U32)(8) // 최대 4차원 배열까지만 지원한다
 
 // usb
 #define TT_USB_PIPEHANDLE	(int)(0x1000)

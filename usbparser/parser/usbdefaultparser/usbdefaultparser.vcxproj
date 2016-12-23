@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{07C10C77-73D9-493A-A690-11B13582A81B}</ProjectGuid>
+    <ProjectGuid>{917E06EF-9816-4702-B4B3-9060D292203A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>usbuserparser</RootNamespace>
+    <RootNamespace>usbdefaultparser</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>usbuserparser</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,17 +73,25 @@
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.pll</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
+    <OutDir>.\..\..\output\x86\debug</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.pll</TargetExt>
     <TargetName>$(ProjectName)64</TargetName>
+    <OutDir>.\..\..\output\x64\debug</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)32</TargetName>
+    <TargetExt>.pll</TargetExt>
+    <OutDir>.\..\..\output\x86\release</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)64</TargetName>
+    <TargetExt>.pll</TargetExt>
+    <OutDir>.\..\..\output\x64\release</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -153,7 +160,7 @@
     <ClInclude Include="parserdefinition.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="usbuserparser.h" />
+    <ClInclude Include="usbdefaultparser.h" />
     <ClInclude Include="whatusb_common_header\cf.h" />
     <ClInclude Include="whatusb_common_header\cf_base_types.h" />
     <ClInclude Include="whatusb_common_header\cf_irp.h" />
@@ -190,7 +197,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="usbuserparser.cpp" />
+    <ClCompile Include="usbdefaultparser.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

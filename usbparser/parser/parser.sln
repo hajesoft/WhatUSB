@@ -10,11 +10,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usbdefaultparser", "usbdefa
 		{9C09EC4D-F15A-4D7D-B838-7A7C5E9144AA} = {9C09EC4D-F15A-4D7D-B838-7A7C5E9144AA}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usbuserparser", "usbuserparser\usbuserparser.vcxproj", "{07C10C77-73D9-493A-A690-11B13582A81B}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9C09EC4D-F15A-4D7D-B838-7A7C5E9144AA} = {9C09EC4D-F15A-4D7D-B838-7A7C5E9144AA}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,14 +34,6 @@ Global
 		{917E06EF-9816-4702-B4B3-9060D292203A}.Release|Win32.Build.0 = Release|Win32
 		{917E06EF-9816-4702-B4B3-9060D292203A}.Release|x64.ActiveCfg = Release|x64
 		{917E06EF-9816-4702-B4B3-9060D292203A}.Release|x64.Build.0 = Release|x64
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Debug|Win32.ActiveCfg = Debug|Win32
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Debug|Win32.Build.0 = Debug|Win32
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Debug|x64.ActiveCfg = Debug|x64
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Debug|x64.Build.0 = Debug|x64
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Release|Win32.ActiveCfg = Release|Win32
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Release|Win32.Build.0 = Release|Win32
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Release|x64.ActiveCfg = Release|x64
-		{07C10C77-73D9-493A-A690-11B13582A81B}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

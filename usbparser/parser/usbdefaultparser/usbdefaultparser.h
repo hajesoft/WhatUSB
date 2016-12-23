@@ -7,7 +7,7 @@
 #include <usb.h>
 #include <tchar.h>
 
-#include "parserdefinition.h"
+#include ".\..\..\common\common_header\parserdefinition.h"
 
 #define INOUTDIR	(L"IN/OUT")
 #define INDIR		(L"IN")
